@@ -1,7 +1,6 @@
 import {
   CookieOptions,
   createServerSupabaseClient,
-  parseCookies,
   SupabaseClientOptionsWithoutAuth
 } from '@supabase/auth-helpers-shared';
 import { SupabaseClient } from '@supabase/supabase-js';
@@ -46,7 +45,7 @@ export function createServerClient<
       return request.headers[key] ?? undefined;
     },
     getCookie: (name) => {
-      return parseCookies(request?.cookies[name] ?? '')[name];
+      return request.cookies[name];
     },
     setCookie(name, value, options) {
       // const cookieStr = serializeCookie(name, value, {
