@@ -2,7 +2,6 @@ import {
   CookieOptions,
   createServerSupabaseClient,
   parseCookies,
-  serializeCookie,
   SupabaseClientOptionsWithoutAuth
 } from '@supabase/auth-helpers-shared';
 import { SupabaseClient } from '@supabase/supabase-js';
