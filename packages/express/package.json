@@ -1,0 +1,44 @@
+{
+  "name": "@supabase/auth-helpers-express",
+  "version": "0.0.1",
+  "description": "A collection of framework specific Auth utilities for working with Supabase.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean:all": "rimraf dist node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supabase/auth-helpers.git"
+  },
+  "keywords": [
+    "Supabase",
+    "Auth",
+    "Remix"
+  ],
+  "author": "Supabase",
+  "bugs": {
+    "url": "https://github.com/supabase/auth-helpers/issues"
+  },
+  "homepage": "https://github.com/supabase/auth-helpers/tree/main/packages/remix#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@supabase/supabase-js": "2.0.4",
+    "@types/express": "^4.17.17",
+    "config": "workspace:*",
+    "rimraf": "^5.0.0",
+    "tsconfig": "workspace:*",
+    "tslib": "^2.5.0",
+    "tsup": "^6.5.0"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-shared": "workspace:*"
+  },
+  "peerDependencies": {
+    "@supabase/supabase-js": "^2.0.4"
+  }
+}

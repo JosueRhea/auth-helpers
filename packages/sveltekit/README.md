@@ -209,8 +209,8 @@ For [row level security](https://supabase.com/docs/guides/auth/row-level-securit
 </script>
 
 {#if session}
-  <p>client-side data fetching with RLS</p>
-  <pre>{JSON.stringify(loadedData, null, 2)}</pre>
+<p>client-side data fetching with RLS</p>
+<pre>{JSON.stringify(loadedData, null, 2)}</pre>
 {/if}
 ```
 
